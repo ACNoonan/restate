@@ -1,0 +1,18 @@
+[package]
+name = "restate-storage-engine"
+description = "Backend-agnostic storage engine traits for Restate's RocksDB consumers (log-server, bifrost local_loglet, metadata-server raft, partition-store), letting each crate target either RocksDB or fjall via the same surface."
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[features]
+default = []
+
+[dependencies]
+restate-workspace-hack = { workspace = true }
+
+bytes = { workspace = true }
+thiserror = { workspace = true }

@@ -8259,6 +8259,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "restate-storage-engine"
+version = "1.6.3-dev"
+dependencies = [
+ "bytes",
+ "restate-workspace-hack",
+ "thiserror 2.0.18",
+]
+
+[[package]]
 name = "restate-storage-query-datafusion"
 version = "1.6.3-dev"
 dependencies = [
